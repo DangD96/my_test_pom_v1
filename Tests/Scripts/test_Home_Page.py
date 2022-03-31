@@ -2,7 +2,7 @@ import sys
 sys.path.append("/Users/daviddang/python/my_test_pom_v1") #add my prj directory path to PATH so I can import stuff
 
 import unittest
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait #using python interpreter /usr/local/bin/python3 --> 3.8.5 64-bit
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 import time
