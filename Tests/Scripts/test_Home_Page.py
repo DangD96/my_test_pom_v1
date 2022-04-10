@@ -35,12 +35,11 @@ class DemoHomePage(WebDriverSetup):
         WebDriverWait(driver, 5).until(EC.presence_of_element_located(HomePageLocators.CONTACT_US_LINK), message = "Element doesn't exist") 
         #i guess this needs a tuple
         #if element really isn't there then an error will be thrown (NoSuchElementException)
-        
         #check innerText (python)
         assert "Contact Us" in home.contact_us.get_attribute("innerText")
 
         #check innerText (javascript)
-        #seems to need this format for argument[0]
+        #seems to need this format for arguments[0]
         assert driver.execute_script("return arguments[0].innerText.includes('Contact Us');", home.contact_us) == True
         #return statement can only be used in a function so it guess .execute_script's argument is treated like a function
         
