@@ -31,10 +31,16 @@ class DemoHomePage(WebDriverSetup):
         actions.perform()
         time.sleep(1.5)
 
-        #wait until contact us link is present
-        WebDriverWait(driver, 5).until(EC.presence_of_element_located(HomePageLocators.CONTACT_US_LINK), message = "Element doesn't exist") 
-        #i guess this needs a tuple
+        #wait until contact us link is present (v1) - relies on referencing Locator file
+        #WebDriverWait(driver, 5).until(EC.presence_of_element_located(HomePageLocators.CONTACT_US_LINK), message = "Element doesn't exist")
+        #i guess this version needs a tuple
+       
+
+        #wait until (v2) - doesn't need to rely on referencing Locator file
+        #this is better than v1 IMO because element_to_be_clickable can take a WebElement while presence_of_element_located can't
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(home.contact_us), message = "Did not find element.")
         #if element really isn't there then an error will be thrown (NoSuchElementException)
+
         #check innerText (python)
         assert "Contact Us" in home.contact_us.get_attribute("innerText")
 
