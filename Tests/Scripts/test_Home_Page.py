@@ -10,7 +10,6 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 from Src.TestBase.WebDriverSetup import WebDriverSetup
 from Src.Pages.HomePage import HomePage
-from Src.Locators import HomePageLocators
 
 class DemoHomePage(WebDriverSetup):
 
