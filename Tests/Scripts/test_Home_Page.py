@@ -5,7 +5,7 @@
 # hit from echo $PATH is where all the python config files are located too, so maybe it's supposed to go there
 #I put my chromedriver in /Library/Frameworks/Python.framework/Versions/3.8/bin 
 #Go to directory chromedriver downloaded to and then: sudo mv chromedriver /Library/Frameworks/Python.framework/Versions/3.8/bin
-#Do the sudo so you don't get denied permission
+#Do the sudo command so you don't get denied permission
 #Have to Cmd+Space to search for the location
 
 import sys
