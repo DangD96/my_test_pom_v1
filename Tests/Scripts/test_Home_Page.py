@@ -1,8 +1,9 @@
 #When chromdriver is out of date, have to download a new version of it and stick it in PATH.
 #To figure out PATH varible, type this in command prompt: echo $PATH
 #That command returns places where I can put chromedriver (colon delimited). I think the first spot is where python 
-# checks first. If it finds an old chromedriver in the first location, it'll try to use it.
-#I put all my chromedriver in /Library/Frameworks/Python.framework/Versions/3.8/bin 
+# checks first. If it finds an old chromedriver in the first location, it'll try to use it. Coincidentally the first
+# hit from echo $PATH is where all the python config files are located too, so maybe it's supposed to go there
+#I put my chromedriver in /Library/Frameworks/Python.framework/Versions/3.8/bin 
 #Go to directory chromedriver downloaded to and then: sudo mv chromedriver /Library/Frameworks/Python.framework/Versions/3.8/bin
 #Do the sudo so you don't get denied permission
 #Have to Cmd+Space to search for the location
