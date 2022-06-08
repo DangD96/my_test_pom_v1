@@ -1,4 +1,4 @@
-# When chromdriver is out of date, have to download a new version of it and stick it in PATH.
+# When chromedriver is out of date, have to download a new version of it and stick it in PATH.
 # To figure out PATH varible, type this in command prompt: echo $PATH
 # That command returns places where I can put chromedriver (colon delimited). I think the first spot is where python
 #  checks first. If it finds an old chromedriver in the first location, it'll try to use it. Coincidentally the first
@@ -19,7 +19,8 @@ import time
 from selenium.webdriver.common.action_chains import ActionChains
 # sys.path.append("/Users/daviddang/python/my_test_pom_v1")
 # ^Add my prj directory path to PATH so I can import stuff
-# Removing that didn't seem to affect this program functionally. Interesting
+# Removing that didn't seem to affect this program functionally. Interesting. Maybe loading the PRJ directory
+#  structure into this IDE helped
 
 from Src.TestBase.WebDriverSetup import WebDriverSetup
 from Src.Pages.HomePage import HomePage
