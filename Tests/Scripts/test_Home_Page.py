@@ -20,7 +20,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 # sys.path.append("/Users/daviddang/python/my_test_pom_v1")
 # ^Add my prj directory path to PATH so I can import stuff
 # Removing that didn't seem to affect this program functionally. Interesting. Maybe loading the PRJ directory
-#  structure into this IDE helped
+#  structure into this PyCharm helped
 
 from Src.TestBase.WebDriverSetup import WebDriverSetup
 from Src.Pages.HomePage import HomePage
