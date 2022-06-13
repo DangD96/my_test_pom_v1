@@ -21,6 +21,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 # ^Add my prj directory path to PATH so I can import stuff
 # Removing that didn't seem to affect this program functionally. Interesting. Maybe loading the PRJ directory
 #  structure into this PyCharm helped
+# Note for Windows, had to put chromedriver into the PATH variable at the user level. Settings > System > About >
+#  Advanced System Settings > Environment Variables
 
 from Src.TestBase.WebDriverSetup import WebDriverSetup
 from Src.Pages.HomePage import HomePage
