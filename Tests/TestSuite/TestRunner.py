@@ -9,7 +9,8 @@ load1 = TestLoader().loadTestsFromTestCase(DemoHomePage)
 load2 = TestLoader().loadTestsFromTestCase(DemoContactPage)
 
 # Test Suite is used since there are multiple test cases
-test_suite = TestSuite((load1,load2)) # passing in tuple because TestSuite argument has to be one.
+# Passing in tuple because TestSuite argument has to be one
+test_suite = TestSuite((load1,load2))
 
 test_runner = TextTestRunner(verbosity=2)
 test_runner.run(test_suite)

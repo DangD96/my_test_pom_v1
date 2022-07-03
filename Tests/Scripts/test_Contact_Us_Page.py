@@ -27,8 +27,9 @@ class DemoContactPage(WebDriverSetup):
         contact = ContactUsPage(driver)
         
         try:
-            assert "Email" and "Skype" in contact.getContactInfo()
             # assert "Email" in ContactUsPage(driver).getContactInfo() --> also works if you don't want to instantiate
+            assert "Email" and "Skype" in contact.getContactInfo()
+
         except AssertionError:
             print("Assertion failed.")
 

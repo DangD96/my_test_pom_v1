@@ -6,11 +6,11 @@ from Src.Locators import ContactUsPageLocators
 
 
 class ContactUsPage(object):
-    # locators for this page
+    # Locators for this page
     def __init__(self, driver):
+        # The * here unpacks the contents of the tuple and removes any commas or quotes
         self.contact_info = driver.find_element(*ContactUsPageLocators.CONTACT_INFO_SECTION) 
-        # the * here unpacks the contents of the tuple and removes any commas or quotes
 
-    # methods for this page
+    # Methods for this page
     def getContactInfo(self):
         return self.contact_info.text

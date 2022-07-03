@@ -1,4 +1,4 @@
-# good practice to name class after file name
+# Good practice to name class after file name
 # import sys
 # sys.path.append("/Users/daviddang/python/my_test_pom_v1")
 
@@ -6,17 +6,15 @@
 from Src.Locators import HomePageLocators
 
 
-# capitalize class name
-class HomePage(object): # removing object here doesn't seem to functionally change anything
-    # locators for page elements
+# Capitalize class name
+class HomePage(object):
+    # Locators for page elements
     def __init__(self, driver):
-        # self.driver = driver --> not needed here
+        # The * here unpacks the contents of the tuple and removes any commas or quotes
         self.company_tab = driver.find_element(*HomePageLocators.COMPANY_TAB)
         self.contact_us = driver.find_element(*HomePageLocators.CONTACT_US_LINK)
-        # the * here unpacks the contents of the tuple and removes any commas or quotes - not sure why
-        # this works with find_element
 
-    # methods for this page
+    # Methods for this page
     def clickCompanyTab(self):
         self.company_tab.click()
 

@@ -11,8 +11,7 @@
 
 import sys
 import unittest
-from selenium.webdriver.support.ui import WebDriverWait  # using python interpreter
-# --> /usr/local/bin/python3 --> 3.8.5 64-bit
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 import time
@@ -42,8 +41,12 @@ class DemoHomePage(WebDriverSetup):
         assert home.contact_us.is_displayed() == False
 
         # Hover over company tab
-        actions = ActionChains(driver)  # need to create ActionChains object first
-        actions.move_to_element(home.company_tab)  # queue up action or actions
+        # Need to create ActionChains object first
+        actions = ActionChains(driver)
+
+        # Queue up action or actions
+        actions.move_to_element(home.company_tab)
+
         actions.perform()
         time.sleep(1.5)
 
