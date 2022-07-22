@@ -22,6 +22,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 #  structure into this PyCharm helped
 # Note for Windows, had to put chromedriver into the PATH variable at the user level. Settings > System > About >
 #  Advanced System Settings > Environment Variables
+# Put it in C:\Users\david\AppData\Local\Programs\Python\Python310\Scripts\
 
 from Src.TestBase.WebDriverSetup import WebDriverSetup
 from Src.Pages.HomePage import HomePage
